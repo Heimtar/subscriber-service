@@ -22,21 +22,32 @@
     </div>
   </header>
 
-  <hero class="hero">
+  <section class="hero">
     <div class="hero__container">
       <h1 class="hero__title">Надежная поддержка вашей 1С без переплат</h1>
       <p class="hero__subtitle">Оптимизируем бизнес-процессы, обновляем конфигурации и решаем любые задачи по 1С в
         фиксированные сроки. Рассчитайте стоимость обслуживания ниже</p>
     </div>
-  </hero>
+  </section>
 
   <section class="calc">
     <div class="calc__container">
       <h2 class="calc__main-title">Рассчитайте стоимость абонентки</h2>
       <div class="calc__wrapper">
         <div class="calc__panel">
+          <h3 class="calc__title">Срок договора</h3>
+          <div class="calc__range-group">
+            <input type="range" class="calc__slider" min="1" max="12" value="1" step="1"></input>
+            <span class="calc__range-value">1 месяц</span>
+          </div>
         </div>
         <div class="calc__result">
+          <p class="calc__price-item">Цена за час: <span class="calc__price-value calc__price-value_hour">4400
+              руб.</span></p>
+          <p class="calc__price-item">Стоимость в месяц: <span class="calc__price-value calc__price-value_month">4400
+              руб.</span></p>
+          <div class="calc__total">Итого за весь срок: <span class="calc__total-sum">4400 руб.</span></div>
+          <button type="button" class="calc__submit-btn">Оставить заявку</button>
         </div>
       </div>
     </div>
