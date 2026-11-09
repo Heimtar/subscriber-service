@@ -4,11 +4,60 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Калькулятор абонентки</title>
 </head>
 
 <body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">Калькулятор абонентского обслуживания</div>
+      <a href="tel:+74951505715" class="header__phone">+7 495 150 57 15</a>
+    </div>
+  </header>
+
+  <hero class="hero">
+    <div class="hero__container">
+      <h1 class="hero__title">Надежная поддержка вашей 1С без переплат</h1>
+      <p class="hero__subtitle">Оптимизируем бизнес-процессы, обновляем конфигурации и решаем любые задачи по 1С в
+        фиксированные сроки. Рассчитайте стоимость обслуживания ниже</p>
+    </div>
+  </hero>
+
+  <section class="calc">
+    <div class="calc__container">
+      <h2 class="calc__main-title">Рассчитайте стоимость абонентки</h2>
+      <div class="calc__wrapper">
+        <div class="calc__panel">
+        </div>
+        <div class="calc__result">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta__container">
+      <h2 class="cta__main-title">Нужен индивидуальный расчет?</h2>
+      <p class="cta__text">Если вам требуется больше 10 часов в месяц или уникальные доработки, оставьте заявку, и наш
+        менеджер свяжется с вами</p>
+      <a href="#" class="cta__btn">Позвонить</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__copy">© 2026. Абонентское обслуживание 1С. Все права защищены</p>
+      <a href="https://heimtar.github.io/portfolio/" class="footer__link" target="_blank" rel="noopener noreferrer">Made
+        by Heimtar</a>
+    </div>
+  </footer>
 
   <script type="module" src="/src/main.js"></script>
 </body>
