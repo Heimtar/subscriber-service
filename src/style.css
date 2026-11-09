@@ -1,7 +1,78 @@
-body {
-  font-family: "Roboto", sans-serif;
+:root {
+  --color-dark: #2a1f1f; /* Основной темный для текста */
+  --color-primary-red: #a61b2e; /* Основной красный (ссылки, рамки) */
+  --color-accent-cta: #ff3b30; /* Акцентный алый для кнопок */
+  --color-bg-light: #faf7f7; /* Светло-серый фон для карточек */
+  --color-border-soft: #e8d4d4; /* Очень мягкий, пастельный красно-серый */
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header__container,
+.hero__container,
+.calc__container,
+.cta__container,
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+.page {
+  font-family: "Roboto", sans-serif;
+}
 .footer__link {
   font-family: "Jura", sans-serif;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--color-primary-red) 15%, transparent);
+}
+.header__logo {
+  color: var(--color-dark);
+}
+.header__phone {
+  text-decoration: none;
+  color: var(--color-primary-red);
+  border-radius: 10px;
+  padding: 10px;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.header__phone:hover {
+  color: var(--color-accent-cta);
+  border-color: var(--color-border-soft);
+  box-shadow: 0 0 8px var(--color-border-soft);
+}
+
+.hero__container {
+  text-align: left;
+  padding: 60px 0;
+}
+.hero__title {
+  font-size: 3rem; /* Крупный размер (примерно 48px) */
+  font-weight: 700; /* Жирное начертание (Bold) */
+  color: var(--color-dark); /* Наш глубокий темный цвет вместо чисто черного */
+  line-height: 1.2; /* Оптимальный компактный отступ между строками для заголовков */
+  letter-spacing: -0.02em; /* Легкое сужение букв, чтобы крупный текст смотрелся более стильно */
+  margin-bottom: 16px;
+}
+.hero__subtitle {
+  font-weight: 300;
+  color: var(--color-dark);
+  max-width: 800px;
 }
