@@ -3,6 +3,7 @@
   --color-primary-red: #a61b2e; /* Основной красный (ссылки, рамки) */
   --color-accent-cta: #ff3b30; /* Акцентный алый для кнопок */
   --color-bg-light: #faf7f7; /* Светло-серый фон для карточек */
+  --color-btn-hover: #efe9e9;
   --color-border-soft: #e8d4d4; /* Очень мягкий, пастельный красно-серый */
 }
 
@@ -21,21 +22,24 @@
 .footer__container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px 0;
   width: 100%;
 }
 .page {
   font-family: "Roboto", sans-serif;
+  background: linear-gradient(90deg, #cce0ff 0%, #f2f7ff 50%, #cce0ff 100%);
 }
+
 .footer__link {
   font-family: "Jura", sans-serif;
 }
-
+.header{
+  background-color: var(--color-bg-light);
+}
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
   border-bottom: 1px solid
     color-mix(in srgb, var(--color-primary-red) 15%, transparent);
 }
@@ -61,7 +65,6 @@
 
 .hero__container {
   text-align: left;
-  padding: 60px 0;
 }
 .hero__title {
   font-size: 3rem; /* Крупный размер (примерно 48px) */
@@ -75,4 +78,75 @@
   font-weight: 300;
   color: var(--color-dark);
   max-width: 800px;
+}
+
+.calc__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-radius: 24px;
+  background-color: var(--color-bg-light);
+  padding: 16px;
+  box-shadow: 0 0 8px var(--color-border-soft);
+}
+.calc__main-title {
+  margin-bottom: 40px;
+}
+.calc__panel {
+  flex: 1;
+  padding: 24px;
+  border-radius: 24px;
+  background-color: var(--color-btn-hover);
+}
+.calc__result {
+  width: 380px;
+  padding: 24px;
+  border-radius: 24px;
+  background-color: var(--color-btn-hover);
+}
+.calc__title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--color-dark);
+}
+.calc__hours-group {
+  display: flex;
+  gap: 10px;
+}
+.calc__btn {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  border-style: none;
+  background-color: var(--color-bg-light);
+  box-shadow: 0 0 8px var(--color-border-soft);
+  transition:
+    background-color 200ms ease,
+    color 200ms ease;
+}
+.calc__btn:hover {
+  background-color: var(--color-btn-hover);
+}
+.calc__btn-active {
+  background-color: var(--color-accent-cta);
+  color: var(--color-bg-light);
+}
+.calc__slider {
+  width: 100%;
+}
+.calc__price-item,
+.calc__total {
+  display: flex;
+  justify-content: space-between;
+}
+.calc__total {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px var(--color-border-soft);
+  font-size: 20px;
+  font-weight: 500;
+  background-color: var(--color-bg-light);
 }
