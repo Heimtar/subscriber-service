@@ -1,3 +1,5 @@
+import "./style.css";
+
 const hourButtons = document.querySelectorAll(".calc__btn");
 const monthSlider = document.querySelector(".calc__slider");
 const monthDisplay = document.querySelector(".calc__range-value");
