@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Калькулятор абонентки</title>
+  <script type="module" crossorigin src="/https://github.com/Heimtar/subscriber-service.git/assets/index-BKHXhmdR.js"></script>
+  <link rel="stylesheet" crossorigin href="/https://github.com/Heimtar/subscriber-service.git/assets/index-D9svdR1v.css">
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">Калькулятор абонентского обслуживания</div>
+      <a href="tel:+74951505715" class="header__phone">+7 495 150 57 15</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__container">
+      <h1 class="hero__title">Надежная поддержка вашей 1С без переплат</h1>
+      <p class="hero__subtitle">Оптимизируем бизнес-процессы, обновляем конфигурации и решаем любые задачи по 1С в
+        фиксированные сроки. Рассчитайте стоимость обслуживания ниже</p>
+    </div>
+  </section>
+
+  <section class="calc">
+    <div class="calc__container">
+      <h2 class="calc__main-title">Рассчитайте стоимость абонентки</h2>
+      <div class="calc__wrapper">
+        <!-- группа панели калькуляции-->
+        <div class="calc__panel">
+          <!-- выбор количества часов -->
+          <div class="calc__hours-list">
+            <h3 class="calc__title">Выберите количество часов</h3>
+            <div class="calc__hours-group">
+              <button type="button" class="calc__btn calc__btn-active" data-hours="1">1</button>
+              <button type="button" class="calc__btn" data-hours="2">2</button>
+              <button type="button" class="calc__btn" data-hours="3">3</button>
+              <button type="button" class="calc__btn" data-hours="5">5</button>
+              <button type="button" class="calc__btn" data-hours="10">10</button>
+            </div>
+          </div>
+          <!-- выбор срока действия абонентки вы месяцах-->
+          <div class="calc__range">
+            <h3 class="calc__title">Выберите срок договора</h3>
+            <div class="calc__range-group">
+              <input type="range" class="calc__slider" min="3" max="12" value="3" step="3"></input>
+              <span class="calc__range-value">3 месяца</span>
+            </div>
+          </div>
+
+        </div>
+        <!-- группа панели результата -->
+        <div class="calc__result">
+          <h3 class="calc__title">Итоговые расчеты:</h3>
+          <p class="calc__price-item">Цена за час: <span class="calc__price-value calc__price-value-hour">4400
+              руб.</span></p>
+          <p class="calc__price-item">Стоимость в месяц: <span class="calc__price-value calc__price-value-month">4400
+              руб.</span></p>
+          <div class="calc__total">Итого за весь срок: <span class="calc__total-sum">4400 руб.</span></div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta__container">
+      <h2 class="cta__main-title">Нужен индивидуальный расчет?</h2>
+      <p class="cta__text">Если вам требуется больше 10 часов в месяц или уникальные доработки, оставьте заявку, и наш
+        менеджер свяжется с вами</p>
+      <a href="tel:+74951505715" class="cta__btn">Позвонить</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__copy">© 2026. Абонентское обслуживание 1С. ООО ИТС Сервис</p>
+      <a href="https://heimtar.github.io/portfolio/" class="footer__link" target="_blank" rel="noopener noreferrer">Made
+        by Heimtar</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
